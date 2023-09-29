@@ -1,6 +1,7 @@
 html {
-  background-color: #f1f5f9;
+  background-color:rgb(12, 10, 24);
   font-family: sans-serif;
+  color: whitesmoke;
 }
 
 body {
@@ -18,32 +19,40 @@ body {
 h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
+  color: #ff043a;
+
 }
 
 /* nav styles */
 .hamburger {
   padding-right: 20px;
   cursor: pointer;
+ 
 }
 
 .hamburger .line {
+  border-radius:10px;
   display: block;
   width: 40px;
   height: 5px;
   margin-bottom: 10px;
-  background-color: #ff9776;
+  background-color: #ff043a;
+  
 }
 
 .nav-links {
   width: 100%;
   top: 5rem;
-  left: 48px;
-  background-color: #ff9776;
+  left:100px;
   display: none;
   margin: 0;
+  
 }
 
 .nav-links a {
+  border-radius: 10px;
+  margin-left: 3px;
+  margin-bottom: 3px;
   display: block;
   text-align: center;
   padding: 10px 0;
@@ -51,11 +60,19 @@ h1 {
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
+  color: #67f5ff;
+  border: 1px solid rgb(255, 255, 255);
+
 }
 
-.nav-links a:hover,
+.nav-links a:hover{
+  border: 0px solid rgb(255, 255, 255);
+  background-color: #ff043a;
+}
 .nav-links a:focus {
-  background-color: #ff9776;
+  border-radius: 15px;
+  background-color:#ff00378e;
+
 }
 
 .expanded {

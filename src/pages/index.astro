@@ -1,10 +1,9 @@
 ---
 import '../styles/global.css';
-import Navigation from '../components/Navigation.astro';
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
 const pageTitle = 'Home Page';
-const homeTitle = 'Home Page';
+const homeTitle = 'Wellcome!';
 ---
 
 <html lang='en'>
@@ -15,13 +14,9 @@ const homeTitle = 'Home Page';
     <meta name='generator' content={Astro.generator} />
     <title>{pageTitle}</title>
   </head>
-  <body>
-    <Header />
+  <BaseLayout homeTitle={homeTitle}>
+    <h2>To my awesome blog</h2>
+  </BaseLayout>
 
-    <h1>{homeTitle}</h1>
-    <Footer />
-    <script>
-      import '../scripts/menu.js';
-    </script>
-  </body>
+
 </html>
