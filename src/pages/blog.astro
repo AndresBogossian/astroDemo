@@ -7,11 +7,38 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = 'My Astro Learning Blog';
 ---
 
+<style>
+  li {
+    padding: 5px;
+    margin-top: 10px;
+    color: white;
+    height: fit-content;
+  }
+  a {
+    border-radius: 10px;
+    padding: 5px;
+    color: aqua;
+    height: fit-content;
+    text-decoration: none;
+  }
+  a:hover {
+    border: 1px solid rgb(255, 255, 255);
+
+    box-shadow: rgb(31, 30, 30) 0px 10px;
+    background-color: #ff043a;
+  }
+  a:focus {
+    box-shadow: rgb(21, 20, 20) 0px 5px;
+    transform: translateX(5px);
+  }
+</style>
 <BaseLayout homeTitle={pageTitle}>
-  <p>This is where I will post about my journey learning Astro.</p>
-  <ul>
-    <li><a href='/posts/post-1/'>Post 1</a></li>
-    <li><a href='/posts/post-2/'>Post 2</a></li>
-    <li><a href='/posts/post-3/'>Post 3</a></li>
-  </ul>
+  <div class='card'>
+    <p>This is where I will post about my journey learning Astro.</p>
+    <ul>
+      <li><a href='/posts/post-1/'>Post 1</a></li>
+      <li><a href='/posts/post-2/'>Post 2</a></li>
+      <li><a href='/posts/post-3/'>Post 3</a></li>
+    </ul>
+  </div>
 </BaseLayout>

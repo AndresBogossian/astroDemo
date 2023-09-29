@@ -51,8 +51,8 @@ h1 {
 
 .nav-links a {
   border-radius: 10px;
-  margin-left: 3px;
-  margin-bottom: 3px;
+  margin-left: 5px;
+  margin-bottom: 5px;
   display: block;
   text-align: center;
   padding: 10px 0;
@@ -60,19 +60,20 @@ h1 {
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: #67f5ff;
-  border: 1px solid rgb(255, 255, 255);
-
+  color: #00edfe;
+  
 }
 
 .nav-links a:hover{
-  border: 0px solid rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
   background-color: #ff043a;
+  
 }
 .nav-links a:focus {
-  border-radius: 15px;
-  background-color:#ff00378e;
-
+  background-color:#ff003799;
+  transform: translateY(4px);
+  box-shadow: rgb(29, 28, 28) 0px 5px;
+ 
 }
 
 .expanded {
@@ -80,17 +81,31 @@ h1 {
 }
 
 @media screen and (min-width: 636px) {
+  .card{
+    border-radius: 15px;
+    background-color: rgba(73, 66, 102, 0.489);
+    box-shadow: rgb(22, 22, 32) 10px 8px;
+
+    border: 1px solid rgb(255, 255, 255);
+    height: auto;
+    width: 100%;
+    padding: 15px;
+  }
   .nav-links {
-    margin-left: 5em;
-    display: block;
-    position: static;
+    display: flex;
+    justify-content: center; 
     width: auto;
     background: none;
+    
   }
 
   .nav-links a {
+    margin-left:10px;
     display: inline-block;
     padding: 15px 20px;
+    margin-bottom: 3px;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: rgb(255, 255, 254) 0px 5px;
   }
   .hamburger {
     display: none;

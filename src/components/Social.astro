@@ -13,7 +13,11 @@ const { platform, username } = Astro.props;
     text-decoration: none;
   }
   a:hover {
-    box-shadow: rgb(43, 42, 42) 8px 5px;
+    box-shadow: rgb(31, 30, 30) 0px 10px;
     background-color: #ff043a;
+  }
+  a:focus {
+    box-shadow: rgb(21, 20, 20) 0px 5px;
+    transform: translateY(4px);
   }
 </style>
